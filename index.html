@@ -7,6 +7,10 @@
         font-size: 50px;
         color: yellow;
        }
+       .marquee2{
+         font-size: 40px;
+         color: aqua;
+        }
        .plane{
          width: 200px;
          margin:0 auto;
@@ -52,6 +56,12 @@
            transform:rotate(360deg) scale(2);
          }
        }
+       a{
+         color:white;
+       }
+       a:hover, a:visited, a:active{
+         color:black;
+       }
        .about{
          width:500px;
          margin:90px auto;
@@ -69,10 +79,12 @@
          font-size: 20px;
        }
 
+
     </style>
   </head>
   <body>
     <marquee class="marquee" direction="right" scrollamount="30">MRJS Air - Sending it from the last frontier to the final frontier</marquee>
+    <marquee class="marquee2" direction="left" scrollamount="20">Anytime. Anywhere.</marquee>
     <div class="plane">
       <img src="./images/plane.png" />
     </div>
@@ -80,7 +92,7 @@
       <h3>MRJS air is based out of Bold airstrip serving all locations anytime anywhere.*</h3>
       <h4>*Some restrictions apply</h4>
       <p>
-        Customer Support - Scotty - 908-360-4179
+        Customer Support - Scotty - <a href="tel:907-360-4179">907-360-4179</a>
       </p>
     </div>
   </body>
