@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>MRJS Air - Sending it from the last frontier to the final frontier</title>
+    <style type="text/css">
+      body{ background-color:blue; }
+      .marquee{
+        font-size: 50px;
+        color: yellow;
+       }
+       .plane{
+         width: 200px;
+         margin:0 auto;
+       }
+       .plane img{
+         width:300px;
+         -webkit-animation-name: spin;
+         -webkit-animation-duration:2000ms;
+         -webkit-animation-iteration-count:infinite;
+         -webkit-animation-timing-function: linear;
+         -moz-animation-name: spin;
+         -moz-animation-duration:2000ms;
+         -moz-animation-iteration-count:infinite;
+         -moz-animation-timing-function: linear;
+         -ms-animation-name: spin;
+         -ms-animation-duration:2000ms;
+         -ms-animation-iteration-count:infinite;
+         -ms-animation-timing-function: linear;
+
+         animation-name: spin;
+         animation-duration:2000ms;
+         animation-iteration-count:infinite;
+         animation-timing-function: linear;
+
+       }
+       @-ms-keyframes spin{
+         from{ transform:rotate(0deg); }
+         to{ transform:rotate(360deg); }
+       }
+       @-moz-keyframes spin{
+         from{ transform:rotate(0deg); }
+         to{ transform:rotate(360deg); }
+       }
+       @-webkit-keyframes spin{
+         from{ transform:rotate(0deg); }
+         to{ transform:rotate(360deg); }
+       }
+       @keyframes spin{
+         from{
+           transform:rotate(0deg) scale(0);
+        }
+         to{
+           transform:rotate(360deg) scale(2);
+         }
+       }
+       .about{
+         width:500px;
+         margin:90px auto;
+       }
+       .about h3{
+         color:white;
+       }
+       .about h4{
+         color:red;
+         font-size:8px;
+       }
+       .about p{
+         color: black;
+         font-weight: bold;
+         font-size: 20px;
+       }
+
+    </style>
+  </head>
+  <body>
+    <marquee class="marquee" direction="right" scrollamount="30">MRJS Air - Sending it from the last frontier to the final frontier</marquee>
+    <div class="plane">
+      <img src="./images/plane.png" />
+    </div>
+    <div class="about">
+      <h3>MRJS air is based out of Bold airstrip serving all locations anytime anywhere.*</h3>
+      <h4>*Some restrictions apply</h4>
+      <p>
+        Customer Support - Scotty - 908-360-4179
+      </p>
+    </div>
+  </body>
+</html>
